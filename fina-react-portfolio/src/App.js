@@ -19,10 +19,8 @@ function App() {
         currentCategory={currentCategory}
       ></Nav>
       <main>
-        <div>
-          <Portfolio></Portfolio>
+          <Portfolio currentCategory={currentCategory}></Portfolio>
           <About></About>
-        </div>
       </main>
     </div>
   );

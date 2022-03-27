@@ -1,25 +1,16 @@
 import React from 'react';
+import PhotoList from '../PhotoList';
 import { capitalizeFirstLetter } from '../../utils/helpers';
-import photo from "../../assets/small/commercial/0.jpg";
 
-function Portfolio(props) {
-    const currentCategory = {
-        name: "Featured Projects",
-        description: "Portfolio examples including code generators, front-end, back-end and full-stack challenges."
-    };
-    return (
-        <section>
-            <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
-            <p>{currentCategory.name}</p>
-            <div>
-                <img 
-                    src={photo}
-                    alt="Gallery of portfolio projects"
-                    className="img-thumnail mx-1"
-                />
-            </div>
-        </section>
-    );
+function Portfolio( props ) {
+  const { currentCategory } = props;
+  return (
+    <section>
+      <h1 data-testid="h1tag">{capitalizeFirstLetter(currentCategory.name)}</h1>
+      <p>{currentCategory.description}</p>
+      <PhotoList category={currentCategory.name} />
+    </section>
+  );
 }
 
 export default Portfolio;

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
@@ -8,9 +8,10 @@ function Nav(props) {
     currentCategory,
   } = props;
 
-  const handleClick = () => {
-    console.log("click handled")
-  }
+  const handleClick = (item) => {
+    console.log(item);
+    return item;
+  };
 
   useEffect(() => {
     document.title = capitalizeFirstLetter(currentCategory.name);
