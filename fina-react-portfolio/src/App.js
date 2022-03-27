@@ -5,7 +5,7 @@ import Portfolio from './components/Portfolio';
 
 function App() {
   const [categories] = useState([
-    { name: "portfolio", description: "Showcasing projects of interest"},
+    { name: "portfolios", description: "Showcasing projects of interest"},
     { name: "Contact", description: "I would love to hear from you!" },
     { name: "resume", description: "My work history..." }]);
 
