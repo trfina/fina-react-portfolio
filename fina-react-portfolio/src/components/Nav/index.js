@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
-function Nav() {
-  const categories = [
-    { name: "portfolio", description: "Showcase six projects of interest"},
-    { name: "Contact", description: "I would love to hear from you" },
-    { name: "resume", description: "My work history..." }
-  ];
+function Nav(props) {
+  const {
+    categories = [],
+    setCurrentCategory,
+    currentCategory,
+  } = props;
 
   const handleClick = () => {
     console.log("click handled")
   }
+
+  useEffect(() => {
+    document.title = capitalizeFirstLetter(currentCategory.name);
+  }, [currentCategory]);
 
   return (
     <header data-testid="header" className="flex-row px-1">
@@ -29,15 +33,17 @@ function Nav() {
         {/* mapping categories as defined above before JSX return function */}
         {categories.map((category) => (
           // return only a single JSX element as indicated by the parenthesis
-          <li
-            className="mx-1"
-            // outermost element has the key attribute
-            // to help React keep track of items in the virtual DOM
-            key={category.name}>
-            <span onClick={() => { handleClick(); }}>
-              {capitalizeFirstLetter(category.name)}
-            </span>
-          </li>
+          <li className={`mx-1 ${
+            currentCategory.name === category.name && 'navActive'
+            }`} key={category.name}>
+          <span
+            onClick={() => {
+              setCurrentCategory(category)
+            }}
+          >
+            {capitalizeFirstLetter(category.name)}
+          </span>
+        </li>
         ))}
       </ul>
     </nav>
