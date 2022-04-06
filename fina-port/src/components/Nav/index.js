@@ -1,28 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
-function categorySelected(name) {
-    console.log(`${name} clicked`)
-}
+// function categorySelected(name) {
+//     console.log(`${name} clicked`)
+// }
 
-function Nav() {
-    // .map function goes here
-    const categories = [
-        {
-            name: "portfolios",
-            description:
-            "Gallery of portfolio screenshots",
-        },
-        {   name: "portraits", 
-            description: "Portraits of people in my life" },
-            
-        {   name: "gardening",
-            description: "Past garden project pictures",
-        },
-    ];
+function Nav(props) {
+    const {
+        categories = [],
+        setCurrentCategory,
+        currentCategory,
+    } = props;
+
     const handleClick = () => {
         console.log("click handled")
     }
+    useEffect(() => {
+        document.title = capitalizeFirstLetter(currentCategory.name);
+    }, [currentCategory]);
 
     return (
         <header  className="flex-row px-1">
@@ -38,18 +33,21 @@ function Nav() {
                             About me
                         </a>
                     </li>
-                    <li className="mx-2">
-                        <span onClick={() => handleClick()}>
-                            Contact
-                        </span>
-                    </li>
-                    {
-                        categories.map((category) => (
-                            <li className="mx-1" key={category.name} >
-                                <span onClick={() => { handleClick(); }}>
-                                {capitalizeFirstLetter(category.name)}
-                            </span>
-                        </li>
+                    <li>
+            <span>Contact</span>
+            </li>
+            {categories.map((category) => (
+                <li className={`mx-1 ${
+                    currentCategory.name === category.name && 'navActive'
+                    }`} key={category.name}>
+                <span
+                    onClick={() => {
+                    setCurrentCategory(category)
+                    }}
+                >
+                    {capitalizeFirstLetter(category.name)}
+                </span>
+                </li>
                     ))}
                 </ul>
             </nav>
