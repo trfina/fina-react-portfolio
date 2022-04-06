@@ -9,15 +9,15 @@ function Nav() {
     // .map function goes here
     const categories = [
         {
-            name: "commercial",
+            name: "portfolios",
             description:
-            "Photos of grocery stores, food trucks, and other commercial projects",
+            "Gallery of portfolio screenshots",
         },
-        { name: "portraits", description: "Portraits of people in my life" },
-        { name: "food", description: "Delicious delicacies" },
-        {
-            name: "landscape",
-            description: "Fields, farmhouses, waterfalls, and the beauty of nature",
+        {   name: "portraits", 
+            description: "Portraits of people in my life" },
+            
+        {   name: "gardening",
+            description: "Past garden project pictures",
         },
     ];
     const handleClick = () => {
