@@ -6,10 +6,9 @@ const PhotoList = ({ category }) => {
   const [currentPhoto, setCurrentPhoto] = useState();
   const [photos] = useState([
     {
-      name: 'Grocery aisle',
+      name: 'Curious Traveler',
       category: 'portfolio',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      description:'https://blooming-ridge-28074.herokuapp.com/'
     },
     {
       name: 'Grocery booth',
