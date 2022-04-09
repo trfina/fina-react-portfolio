@@ -56,7 +56,7 @@ function Nav(props) {
                             }}
                         >
                             {capitalizeFirstLetter(category.name)}
-                        </span>`
+                        </span>
                     </li>
                     ))}
                 </ul>
