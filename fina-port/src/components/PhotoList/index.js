@@ -8,7 +8,8 @@ const PhotoList = ({ category }) => {
     {
       name: 'Curious Traveler',
       category: 'portfolio',
-      description:'`https://blooming-ridge-28074.herokuapp.com/`'
+      description:'A travel destination site featuring out-of-the-ordinary stop for the adventurous traveler.',
+      live:'https://blooming-ridge-28074.herokuapp.com/',
     },
     {
       name: 'Grocery booth',
@@ -146,3 +147,4 @@ const PhotoList = ({ category }) => {
 };
 
 export default PhotoList;
+
