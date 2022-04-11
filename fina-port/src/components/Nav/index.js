@@ -25,7 +25,7 @@ function Nav(props) {
         <header  className="flex-row px-1">
             <h2>
                 <a href="/">
-                    <span role="img" aria-label="camera"> 📸</span> Oh Snap!
+                    <span role="img" aria-label="header image"></span> Tammy Fina
                 </a>
             </h2>
             <nav>
