@@ -1,16 +1,22 @@
 import React from 'react';
-import coverImage from "../../assets/cover/cover-image.jpg";
-
+// import coverImage from "../../assets/images/cover-image.jpg";
+import headShot from "../../assets/images/headShot.jpg";
 function About() {
   return (
     <section className="my-5">
-      <h1 id="about">I am Fina</h1>
-      <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />    
+      <h1 id="about">Who am I?</h1>
+      {/* <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />  */}
+      <img src={headShot} className="my-2" style={{ width: "100px" }} alt="cover" />   
       <div className="my-2">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum. Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh. Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
-      </p>
-      </div>
+          Hi!  Having experience with many adventures in a variety of realms, I am currently building and fine-tuning my credentials for full-stack web development.</p>
+          
+          <p>As a former main-frame programmer, I have a foundation in computer languages and job control.  My experience as a network administrator and computer science teacher provided me the oportunity to deliver a positive user experience to students and staff as they applied changing technology to their daily activities.</p>
+          
+          <p>Through the Ohio State University Colleg of Enginerring, I successfully completed the OSU Coding Boot Camp... </p>
+
+          <p>Which now leads me to my next adventure:  seeking and finding employment as  Junior Full-Stack Web Developer.</p>
+      </div>    
     </section>
   );
 }

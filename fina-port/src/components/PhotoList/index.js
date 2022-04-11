@@ -8,7 +8,7 @@ const PhotoList = ({ category }) => {
     {
       name: 'Curious Traveler',
       category: 'portfolio',
-      description:'https://blooming-ridge-28074.herokuapp.com/'
+      description:'`https://blooming-ridge-28074.herokuapp.com/`'
     },
     {
       name: 'Grocery booth',
