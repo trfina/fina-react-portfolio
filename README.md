@@ -15,7 +15,7 @@ This project demonstrates a single-page applicatiion using Create React App to s
 * [Questions](#questions)
 
 ## Installation
-``node index.js`` starts the README.md generator
+``npm start`` starts the React Portfolio App
 
 ## License
 
