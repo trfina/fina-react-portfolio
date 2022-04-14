@@ -11,8 +11,8 @@ function App() {
       name: 'portfolio',
       description: 'Portofolio gallery of recent projects',
     },
-    // { name: 'portraits', description: 'Portraits of people in my life' },
-    // { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
+    { name: 'resume', 
+      description: 'My current resume' },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);

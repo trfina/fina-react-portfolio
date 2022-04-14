@@ -9,32 +9,40 @@ const PhotoList = ({ category }) => {
       name: 'Curious Traveler',
       category: 'portfolio',
       description:'A travel destination site featuring out-of-the-ordinary stop for the adventurous traveler.',
+      technology: 'MERN full-stack with GraphQL',
       live:'https://blooming-ridge-28074.herokuapp.com/',
+    },
+    {
+      name: 'Password Generator',
+      category: 'portfolio',
+      description:
+        'A password generator written in JavaScript'
+    },
+    {
+      name: 'Portfolio Builder',
+      category: 'portfolio',
+      description:
+        'Portfolio builder with Create React App'
+    },
+    {
+      name: 'Curious Traveler - beta',
+      category: 'portfolio',
+      description:
+        'Dynamically generate a document in MarkDown language using the inquirer package.',
+      technology: 'MySQL and Restful.API using handlebars',
+    },
+    {
+      name: 'Professional README Generator',
+      category: 'portfolio',
+      description:
+        'Dynamically generate a document in MarkDown language using the inquirer package.'
+    },
+    {
+      name: 'Object-Relation-Mapping: e-commerce back-end',
+      category: 'portfolio',
+      description:
+        'Demonstrate an e-commerce back-end build from a working Express.js API and Sequelize to interact with a MySQL database.'
     }
-    // {
-    //   name: 'Grocery booth',
-    //   category: 'commercial',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    // },
-    // {
-    //   name: 'Building exterior',
-    //   category: 'commercial',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    // },
-    // {
-    //   name: 'Restaurant table',
-    //   category: 'commercial',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    // },
-    // {
-    //   name: 'Cafe interior',
-    //   category: 'commercial',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    // },
     // {
     //   name: 'Cat green eyes',
     //   category: 'portraits',
