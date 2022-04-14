@@ -47,98 +47,23 @@ const PhotoList = ({ category }) => {
       name: 'My Current Resume',
       category: 'resume',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        'Employment history with skills list'
     }
-    // {
-    //   name: 'Green parrot',
-    //   category: 'portraits',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    // },
-    // {
-    //   name: 'Yellow macaw',
-    //   category: 'portraits',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    // },
-    // {
-    //   name: 'Pug smile',
-    //   category: 'portraits',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    // },
-    // {
-    //   name: 'Pancakes',
-    //   category: 'food',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    // },
-    // {
-    //   name: 'Burrito',
-    //   category: 'food',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    // },
-    // {
-    //   name: 'Scallop pasta',
-    //   category: 'food',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    // },
-    // {
-    //   name: 'Burger',
-    //   category: 'food',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    // },
-    // {
-    //   name: 'Fruit bowl',
-    //   category: 'food',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    // },
-    // {
-    //   name: 'Green river',
-    //   category: 'landscape',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    // },
-    // {
-    //   name: 'Docks',
-    //   category: 'landscape',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    // },
-    // {
-    //   name: 'Panoramic village by sea',
-    //   category: 'landscape',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    // },
-    // {
-    //   name: 'Domestic landscape',
-    //   category: 'landscape',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    // },
-    // {
-    //   name: 'Park bench',
-    //   category: 'landscape',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    // }
+
   ]);
 
   const currentPhotos = photos.filter(photo => photo.category === category);
 
   const toggleModal = (image, i) => {
-    setCurrentPhoto({...image, index: i})
-    setIsModalOpen(true);
+    setCurrentPhoto({...image, index: i});
+    setIsModalOpen(!isModalOpen);
   }
-  
+
   return (
     <div>
-      {isModalOpen && <Modal currentPhoto={currentPhoto} />}
+      {isModalOpen && (
+      <Modal currentPhoto={currentPhoto} onClose={toggleModal} />
+      )}
       <div className="flex-row">
         {currentPhotos.map((image, i) => (
           <img
