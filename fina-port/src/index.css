@@ -5,12 +5,12 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
-  --secondary: #F3A847;
+  --primary: #34a7e4fc;
+  --secondary: #ff812d;
   --tertiary: #B12704;
-  --light: #fafafa;
-  --dark: #3d5194;
-  --darker: #111111;
+  --light: #fffffff7;
+  --dark: #484b58;
+  --darker: #5d5454;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -282,8 +282,8 @@ button {
 
 a {
 	border-radius: 5px;
-	color: var(--primary);
-	font-weight: 600;
+	color: var(--light);
+	font-weight: 800;
 	padding: 2px 4px;
 	margin-left: -2px;
 	margin-right: -2px;

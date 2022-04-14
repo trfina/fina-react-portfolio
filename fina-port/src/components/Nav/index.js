@@ -1,10 +1,6 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
-// function categorySelected(name) {
-//     console.log(`${name} clicked`)
-// }
-
 function Nav(props) {
     const {
         categories = [],
@@ -14,9 +10,6 @@ function Nav(props) {
         setContactSelected
     } = props;
 
-    const handleClick = () => {
-        console.log("click handled")
-    }
     useEffect(() => {
         document.title = capitalizeFirstLetter(currentCategory.name);
     }, [currentCategory]);
@@ -25,7 +18,7 @@ function Nav(props) {
         <header  className="flex-row px-1">
             <h2>
                 <a href="/">
-                    <span role="img" aria-label="header image"></span> Tammy Fina
+                    Tammy Fina
                 </a>
             </h2>
             <nav>
@@ -36,7 +29,7 @@ function Nav(props) {
                         </a>
                     </li>
                     
-                    <li>
+                    <li className={`mx-2 ${contactSelected && 'navActive'}`}>
                         <span onClick={() => setContactSelected(true)}>
                             Contact</span>
                     </li>
