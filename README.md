@@ -7,7 +7,8 @@ This project demonstrates a single-page applicatiion using Create React App to s
 
 [Repository for this Project](https://github.com/trfina/fina-react-portfolio)
 
-![fina-port-screen](https://user-images.githubusercontent.com/12851682/162844987-1e006fbc-2346-40de-8c74-478163b7bc8a.png)
+![fina-port-screen](https://user-images.githubusercontent.com/12851682/163492916-fce7f9ec-9766-429d-94a1-81013ab62634.png)
+
 
 ## Table of Contents
 * [Installation](#installation)
