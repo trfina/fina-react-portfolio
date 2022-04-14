@@ -42,13 +42,13 @@ const PhotoList = ({ category }) => {
       category: 'portfolio',
       description:
         'Demonstrate an e-commerce back-end build from a working Express.js API and Sequelize to interact with a MySQL database.'
+    },
+    {
+      name: 'My Current Resume',
+      category: 'resume',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
     }
-    // {
-    //   name: 'Cat green eyes',
-    //   category: 'portraits',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    // },
     // {
     //   name: 'Green parrot',
     //   category: 'portraits',
