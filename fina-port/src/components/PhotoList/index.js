@@ -8,15 +8,14 @@ const PhotoList = ({ category }) => {
     {
       name: 'Curious Traveler',
       category: 'portfolio',
-      description:'A travel destination site featuring out-of-the-ordinary stop for the adventurous traveler.',
+      description:'A travel destination site featuring out-of-the-ordinary stops for the adventurous traveler.',
       technology: 'MERN full-stack with GraphQL',
-      live:'https://blooming-ridge-28074.herokuapp.com/',
+      live: <a href="https://curious-traveler.herokuapp.com/" target="_blank" rel="noopener noreferrer">Visit Site (opens a new tab)</a>
     },
     {
       name: 'Password Generator',
       category: 'portfolio',
-      description:
-        'A password generator written in JavaScript'
+      description:'A password generator written in JavaScript'
     },
     {
       name: 'Portfolio Builder',
