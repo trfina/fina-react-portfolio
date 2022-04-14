@@ -13,34 +13,37 @@ const PhotoList = ({ category }) => {
       live: <a href="https://curious-traveler.herokuapp.com/" target="_blank" rel="noopener noreferrer">Visit Site (opens a new tab)</a>
     },
     {
+      name: 'NoSQL Challenge: Social Network API',
+      category: 'portfolio',
+      description:'This project builds an API for a social network web applicaion using Express.js for routing, a MongoDB database, and the Mongoose ODM',
+      link:  <a href="https://github.com/trfina/NoSQL-API" target="_blank" rel="noopener noreferrer">Visit GitHub (opens a new tab)</a>
+    },
+    {
       name: 'Password Generator',
       category: 'portfolio',
-      description:'A password generator written in JavaScript'
+      description:'A password generator written in JavaScript',
+      technology: 'Built with HTML, CSS, Javascript',
+      live: <a href="https://github.com/trfina/password-generator/" target="_blank" rel="noopener noreferrer">Visit GitHub (opens a new tab)</a>
     },
     {
-      name: 'Portfolio Builder',
+      name: 'Object-Relation-Mapping: e-commerce back-end',
       category: 'portfolio',
-      description:
-        'Portfolio builder with Create React App'
-    },
-    {
-      name: 'Curious Traveler - beta',
-      category: 'portfolio',
-      description:
-        'Dynamically generate a document in MarkDown language using the inquirer package.',
-      technology: 'MySQL and Restful.API using handlebars',
+      description: 'This app demonstrates an e-commerce back-end build from a working Express.js API. It uses Sequelize to interact with a MySQL database.',
+      live: <a href="https://github.com/trfina/ecommerce-backend/" target="_blank" rel="noopener noreferrer">Visit GitHub (opens a new tab)</a>,
     },
     {
       name: 'Professional README Generator',
       category: 'portfolio',
       description:
-        'Dynamically generate a document in MarkDown language using the inquirer package.'
+        'Dynamically generate a document in MarkDown language using the inquirer package.',
+      live: <a href="https://github.com/trfina/professional-README-generator" target="_blank" rel="noopener noreferrer">Visit GitHub (opens a new tab)</a>,
     },
     {
-      name: 'Object-Relation-Mapping: e-commerce back-end',
+      name: 'a Tech Blog for DevOps',
       category: 'portfolio',
       description:
-        'Demonstrate an e-commerce back-end build from a working Express.js API and Sequelize to interact with a MySQL database.'
+        'This project demonstrates the use of MVC to build a CMS-style technical blog site.',
+      live: <a href="https://github.com/trfina/tech-blog" target="_blank" rel="noopener noreferrer">Visit GitHub (opens a new tab)</a>,
     },
     {
       name: 'My Current Resume',
@@ -48,7 +51,6 @@ const PhotoList = ({ category }) => {
       description:
         'Employment history with skills list'
     }
-
   ]);
 
   const currentPhotos = photos.filter(photo => photo.category === category);

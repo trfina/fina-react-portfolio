@@ -10,6 +10,9 @@ function App() {
     {
       name: 'portfolio',
       description: 'Visit my gallery of featured projects:',
+      technology: 'Technology used in creation of this project...',
+      live: 'Deployed site...'
+
     },
     { name: 'resume', 
       description: 'My current resume' },
