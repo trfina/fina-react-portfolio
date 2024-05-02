@@ -3,7 +3,7 @@
 [![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## <a name="Description">Description</a>
-This project demonstrates a single-page applicatiion using Create React App to showcase a portfolio of projects. 
+This project demonstrates a single-page application using Create React App to showcase a portfolio of projects. 
 
 [Repository for this Project](https://github.com/trfina/fina-react-portfolio)
 
